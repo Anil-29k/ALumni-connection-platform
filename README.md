@@ -1,1 +1,1 @@
-This platform help to conect alumni of  a cologe with eachother
+This platform help to conect alumni of  a collage with eachother
