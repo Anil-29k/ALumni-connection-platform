@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Improvement Survey</title>
+    <link rel="stylesheet" href="feed-survey.css">
+</head>
+<body>
+    <header>
+        <h1>College Improvement Survey</h1>
+    </header>
+    <main>
+        <section class="survey-form">
+            <h2>College Improvement Survey</h2>
+            <p>Your input is valuable to us. Please provide your feedback to help us improve our college.</p>
+            <form action="submit-survey-college-improvement.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+                
+                <label for="graduation-year">Year of Graduation:</label>
+                <input type="number" id="graduation-year" name="graduation-year" placeholder="Year of Graduation" required><br>
+                
+                <label for="satisfaction">Overall Satisfaction with the College:</label>
+                <select id="satisfaction" name="satisfaction" required>
+                    <option value="">Select...</option>
+                    <option value="very-satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="very-dissatisfied">Very Dissatisfied</option>
+                </select><br>
+                
+                <label for="improvements">Suggestions for Improvement:</label>
+                <textarea id="improvements" name="improvements" rows="4" placeholder="Your Suggestions"></textarea><br>
+                
+                <button type="submit">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

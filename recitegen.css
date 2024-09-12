@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

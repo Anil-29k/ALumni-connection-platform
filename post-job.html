@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="jobportal.css">
+</head>
+<body>
+    <header>
+        <h1>Job Portal</h1>
+    </header>
+    <main>
+        <section class="post-job">
+            <h2>Post a Job</h2>
+            <form action="/submit-job" method="post">
+                <label for="title">Job Title:</label>
+                <input type="text" id="title" name="title" required><br>
+                
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company" required><br>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required><br>
+                
+                <label for="salary">Salary:</label>
+                <input type="text" id="salary" name="salary" required><br>
+                
+                <label for="description">Job Description:</label>
+                <textarea id="description" name="description" required></textarea><br>
+                
+                <button type="submit">Post Job</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+</body>
+</html>

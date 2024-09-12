@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Alumni Association</h1>
+        <nav><a href="index.html">Home</a>
+            <a href="signup.html">Registration</a>
+            <a href="donationportal.html">Donation</a>
+            <a href="networkinghub.html">Networking</a>
+            <a href="jobportal.html">Job Portal</a>
+            <a href="sucessstory.html">Success Stories</a>
+            <a href="eventandreunion.html">Events and Reunion</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="survey.html">Survey</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+    <form action="/post" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required><br><br>
+
+        <label for="collagename">College Name:</label>
+        <select name="collagename" id="collagename" required>
+            <option value="bput">BPUT</option>
+            <option value="vssut">VSSUT</option>
+            <option value="iitbbs">IIT BBS</option>
+            <option value="nitrkr">NIT ROURKELA</option>
+            <option value="revansa">REVANSA</option>
+        </select><br><br>
+
+        <label for="regno">Registration No.:</label>
+        <input type="number" id="regno" name="regno" placeholder="Enter Registration No." required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm Password" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

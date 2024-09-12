@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Portal</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Alumni Association</h1>
+        <nav><a href="index.html">Home</a>
+            <a href="signup.html">Registration</a>
+            <a href="donationportal.html">Donation</a>
+            <a href="networkinghub.html">Networking</a>
+            <a href="jobportal.html">Job Portal</a>
+            <a href="sucessstory.html">Success Stories</a>
+            <a href="eventandreunion.html">Events and Reunion</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="survey.html">Survey</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+    <h1>Donation Portal</h1>
+    <form method="post" action="recitegen.html">
+        <label for="name">Enter name:</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+        
+        <label for="cardType">Type of card:</label>
+        <select id="cardType" name="cardType" required>
+            <option value="">Select</option>
+            <option value="DebitCard">Debit Card</option>
+            <option value="CreditCard">Credit Card</option>
+        </select><br>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" class="card-input" placeholder="XXXX XXXX XXXX" maxlength="14" required><br>
+
+        <label for="cardName">Name on card:</label>
+        <input type="text" id="cardName" name="cardName" placeholder="Holder Name" required><br>
+
+        <label for="startMonth">Start Date:</label>
+        <select id="startMonth" name="startMonth" required>
+            <!-- <option value="10">Months</option> -->
+            <option value="01">JAN</option>
+            <option value="02">FEB</option>
+            <option value="03">MAR</option>
+            <option value="04">APR</option>
+            <option value="05">MAY</option>
+            <option value="06">JUN</option>
+            <option value="07">JUL</option>
+            <option value="08">AUG</option>
+            <option value="09">SEP</option>
+            <option value="10">OCT</option>
+            <option value="11">NOV</option>
+            <option value="12">DEC</option>
+        </select>
+        <label for="startYear">Year:</label>
+        <select id="startYear" name="startYear" required></select><br>
+
+        <label for="expiryMonth">Expiry date:</label>
+        <select id="expiryMonth" name="expiryMonth" required>
+            <option value="01">JAN</option>
+            <option value="02">FEB</option>
+            <option value="03">MAR</option>
+            <option value="04">APR</option>
+            <option value="05">MAY</option>
+            <option value="06">JUN</option>
+            <option value="07">JUL</option>
+            <option value="08">AUG</option>
+            <option value="09">SEP</option>
+            <option value="10">OCT</option>
+            <option value="11">NOV</option>
+            <option value="12">DEC</option>
+        </select>
+        
+        <label for="expiryYear">Year:</label>
+        <select id="expiryYear" name="expiryYear" required></select><br>
+
+        <label for="cvv">Security code (CVV):</label>
+        <input type="password" id="cvv" name="cvv" placeholder="CVV" required pattern="\d{3}" maxlength="3"><br>
+
+        <button type="submit">Next</button>
+    </form>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        const startYearDropdown = document.getElementById('startYear');
+        const expiryYearDropdown = document.getElementById('expiryYear');
+
+        // Populate startYear dropdown
+        const startYear = 1990;
+        for (let year = currentYear; year >= startYear; year--) {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            startYearDropdown.appendChild(option);
+        }
+
+        // Populate expiryYear dropdown
+        const endYear = currentYear + 20;
+        for (let year = currentYear; year <= endYear; year++) {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            expiryYearDropdown.appendChild(option);
+        }
+        const cardForm = document.getElementById('cardForm');
+        const cardNumberInput = document.getElementById('cardNumber');
+        const outputDiv = document.getElementById('output');
+
+        // Automatically format the card number as 'XXXX XXXX XXXX XXXX'
+        cardNumberInput.addEventListener('input', function(e) {
+            let input = e.target.value.replace(/\D/g, ''); // Remove non-digits
+            input = input.match(/.{1,4}/g)?.join(' ') || ''; // Group by 4 digits
+            e.target.value = input;
+        });
+
+        // Store card number (for demo purposes, in JavaScript)
+        cardForm.addEventListener('Submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+            const cardNumber = cardNumberInput.value;
+            outputDiv.textContent = 'Stored card Number: ${cardNumber}';
+        });
+    </script>
+
+</body>
+</html>

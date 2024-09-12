@@ -1,0 +1,33 @@
+/* Existing styles from previous examples */
+
+/* About Us Page Styles */
+.about-us {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    text-align: left;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+}
+
+.team-member h3 {
+    margin-top: 0;
+}
+
+.history {
+    text-align: center;
+    margin-bottom: 40px;
+}

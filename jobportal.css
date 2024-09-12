@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro, .job-listings, .post-job {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

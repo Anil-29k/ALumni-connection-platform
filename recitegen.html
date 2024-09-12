@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Generation</title>
+    <link rel="stylesheet" href="recitegen.css">
+</head>
+
+<body>
+    <form method="post" action="submit_receipt.php">
+        <label for="amount">Enter amount to donate:</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter amount" min="1" required><br>
+
+        <label for="email">Enter your email for receipt:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter any message"></textarea><br>
+
+        <input type="submit" value="Generate Receipt">
+    </form>
+</body>
+
+</html>

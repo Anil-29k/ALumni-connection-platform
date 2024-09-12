@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories</title>
+    <link rel="stylesheet" href="sucessstory.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Alumni Association</h1>
+        <nav><a href="index.html">Home</a>
+            <a href="signup.html">Registration</a>
+            <a href="donationportal.html">Donation</a>
+            <a href="networkinghub.html">Networking</a>
+            <a href="jobportal.html">Job Portal</a>
+            <a href="sucessstory.html">Success Stories</a>
+            <a href="eventandreunion.html">Events and Reunion</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="survey.html">Survey</a>
+            <a href="about-us.html">About Us</a>
+        </nav>
+    </header>
+    <header>
+        <h1>Alumni Success Stories</h1>
+    </header>
+    <main>
+        <section class="post-story">
+            <h2>Share Your Success Story</h2>
+            <form id="story-form">
+                <textarea name="story" placeholder="Write your story..." required></textarea><br>
+                <input type="file" name="media" accept="image/,video/" multiple><br>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        <section class="stories-list">
+            <h2>Recent Success Stories</h2>
+            <div class="story">
+                <p><strong>Alumnus Name</strong></p>
+                <p>Story content goes here...</p>
+                <div class="media">
+                    <!-- Media content (images/videos) goes here -->
+                </div>
+                <div class="story-actions">
+                    <button class="like-btn">Like</button>
+                    <button class="share-btn">Share</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+            </div>
+            <!-- Repeat .story div for each story -->
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="sucess-story.js"></script>
+</body>
+</html>
