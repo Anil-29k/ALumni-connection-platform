@@ -1,0 +1,120 @@
+/* styles.css */
+.schedule-mentorship, .schedule-list {
+    margin: 20px 0;
+}
+
+.schedule-mentorship .form-group {
+    margin-bottom: 15px;
+}
+
+.schedule-mentorship .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.schedule-mentorship input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.schedule-mentorship button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.schedule-mentorship button:hover {
+    background-color: #0056b3;
+}
+
+.schedule-list {
+    margin-top: 30px;
+}
+
+.schedule-list .session-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+/* MentorSearch styles */
+.mentor-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.mentor-search input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.mentor-search button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mentor-search button:hover {
+    background-color: #0056b3;
+}
+
+/* MentorList styles */
+.mentor-list {
+    margin-top: 20px;
+}
+
+.mentor-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mentor-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+}
+
+.mentor-card {
+    display: flex;
+    align-items: center;
+}
+
+.mentor-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.mentor-card h4 {
+    margin: 0;
+}
+
+.mentor-card p {
+    margin: 0;
+    color: gray;
+}

@@ -1,0 +1,50 @@
+.structer {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container-mrg {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.event:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+.event h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.event p {
+    margin: 5px 0;
+    color: #555;
+}
+
+#upcomingevents, #ongoingevents, #completedevents, 
+#upcomingcommunityevents, #ongoingcommunityevents, #completedcommunityevents {
+    margin-bottom: 30px;
+}

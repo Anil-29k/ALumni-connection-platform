@@ -1,0 +1,174 @@
+ .structure {
+     padding: 20px;
+     background-color: #f8f9fa;
+     /* Light background for contrast */
+ }
+
+ .container-mrg {
+     width: 100%;
+     margin-top: 20px;
+     display: flex;
+     /* Use flexbox to control the layout */
+     flex-direction: column;
+     /* Stack elements vertically */
+     align-items: stretch;
+     /* Ensure children take full width*/
+ }
+
+ .tabs {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+ }
+
+ .tabs button {
+     padding: 10px 20px;
+     margin: 0 10px;
+     cursor: pointer;
+     border: none;
+     /* Remove default border */
+     border-radius: 5px;
+     /* Rounded corners */
+     background-color: #e9ecef;
+     /* Light grey background */
+     transition: background-color 0.3s;
+     /* Smooth transition */
+ }
+
+ .tabs button:hover {
+     background-color: #ced4da;
+     /* Darker grey on hover */
+ }
+
+ .tabs button.active {
+     background-color: #007bff;
+     /* Highlight active tab */
+     color: white;
+ }
+
+ /* Default mobile view: vertical stacking */
+ .list-container {
+     flex: 1;
+     /* Allow this container to grow and fill available space */
+     text-align: center;
+ }
+
+ .list-items {
+     display: flex;
+     flex-direction: column;
+     /* Stack items vertically */
+     align-items: center;
+     /* Center items horizontally */
+ }
+
+ .list-item {
+     padding: 15px;
+     /* Increased padding for better touch targets */
+     margin: 10px;
+     /* Space between items */
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     /* Slightly more rounded corners */
+     width: calc(100% - 40px);
+     /* Full width minus margins */
+     max-width: 600px;
+     /* Optional: limit max width */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     background-color: white;
+     /* White background for list items */
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     /* Soft shadow for depth */
+     transition: transform 0.2s;
+     /* Smooth transform on hover */
+ }
+
+ .list-item:hover {
+     transform: translateY(-2px);
+     /* Lift effect on hover */
+ }
+
+ .list-item img {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     /* Circular profile pictures */
+     object-fit: cover;
+     /* Ensures the image covers the area without distortion */
+ }
+
+ button {
+     padding: 8px 12px;
+     /* Slightly larger button */
+     cursor: pointer;
+     margin-top: 10px;
+     border: none;
+     /* Remove default border */
+     border-radius: 5px;
+     /* Rounded corners */
+     background-color: #007bff;
+     /* Primary button color */
+     color: white;
+     /* White text for contrast */
+     transition: background-color 0.3s;
+     /* Smooth transition */
+ }
+
+ button:hover {
+     background-color: #0056b3;
+     /* Darker blue on hover */
+ }
+
+ .photo-gallery {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+     /* Space between images */
+     justify-content: center;
+     /* Center the gallery */
+ }
+
+ .post-image {
+     width: 100px;
+     /* Fixed size for post images */
+     height: 100px;
+     object-fit: cover;
+     /* Ensures images cover the area without distortion */
+     border-radius: 5px;
+     /* Optional: Add some rounding to the corners */
+     border: 1px solid #ddd;
+     /* Light border for separation */
+ }
+
+ /* Desktop view: grid layout */
+ @media (min-width: 768px) {
+     .list-items {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+         /* Responsive grid */
+         gap: 20px;
+         /* Space between grid items */
+         justify-content: center;
+         /* Center the grid */
+     }
+
+     .list-item {
+         width: calc(100% - 40px);
+         /* Full width minus margins */
+         max-width: 250px;
+         /* Adjust size for desktop view */
+     }
+
+     .list-item img {
+         width: 80px;
+         /* Smaller profile picture for desktop */
+         height: 80px;
+     }
+
+     button {
+         padding: 10px 15px;
+         /* Slightly larger button on desktop */
+     }
+ }

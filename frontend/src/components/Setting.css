@@ -1,0 +1,126 @@
+/* General page styling */
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f4f8; /* Softer light background */
+    min-height: 100vh; /* Full height */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+}
+
+/* Content box styling */
+.settings-content {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle, larger shadow */
+    padding: 30px;
+    margin-top: 40px; /* Adds space above the settings box */
+    text-align: center; /* Center-aligns text */
+    transition: box-shadow 0.3s ease; /* Adds transition for hover effects */
+}
+
+.settings-content:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; /* Space below header */
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #007bff; /* Using primary button color for section headings */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px; /* Add space between input fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Blue glow on focus */
+}
+
+/* Button styling */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    background-color: #007bff; /* Primary blue */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Adds a slight lift effect */
+}
+
+button:active {
+    background-color: #003f7f; /* Even darker blue on click */
+    transform: translateY(0); /* Resets lift effect */
+}
+
+button[style*="color: red"] {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 18px;
+}
+
+button[style*="color: red"]:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background on hover */
+}
+
+/* Textarea styling */
+textarea {
+    resize: vertical; /* Allow vertical resize */
+    height: 100px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .settings-content {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,81 @@
+.structer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height for the structure */
+}
+
+.container-mrg {
+    flex: 1;
+    padding: 20px; /* Add padding around the feed */
+    overflow-y: auto; /* Enable scrolling for the feed */
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.feed {
+    background-color: white; /* White background for posts */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 15px 0; /* Space between feed items */
+    padding: 15px; /* Inner spacing */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.feed:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Space below header */
+}
+
+.feed-community, .feed-user {
+    font-weight: bold; /* Make community/user names bold */
+}
+
+.feed-community p {
+    color: #007bff; /* Blue color for community names */
+}
+
+.feed-content {
+    margin-bottom: 15px; /* Space below content */
+}
+
+.feed-content p {
+    font-size: 1rem; /* Base font size for content */
+    line-height: 1.5; /* Improve readability */
+}
+
+.feed-media {
+    max-width: 100%; /* Responsive images */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-top: 10px; /* Space above images */
+}
+
+.feed-reactions {
+    display: flex;
+    justify-content: space-between; /* Space out reaction buttons */
+}
+
+.reaction-button {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.reaction-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.loader, .end-message {
+    text-align: center; /* Center loading and end messages */
+    margin: 20px 0; /* Space around messages */
+    font-size: 1.2rem; /* Font size for messages */
+    color: #666; /* Grey color for messages */
+}

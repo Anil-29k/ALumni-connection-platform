@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.login-signup-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s ease-in-out;
+}
+
+.login-signup-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login-signup-header button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-signup-header button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.forms-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.login-form, .signup-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.login-mode .login-form,
+.signup-mode .signup-form {
+    display: flex;
+    opacity: 1;
+}
+
+.login-form label, .signup-form label {
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.login-form input, .signup-form input, .signup-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: calc(100% - 40px); /* Adjust width to leave space for the icon */
+    padding-right: 40px; /* Ensure text does not overlap with icon */
+}
+
+.password-container button {
+    position: absolute;
+    right: 10px; /* Adjust to place icon closer to the input field */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-container button svg {
+    font-size: 1em; /* Smaller size for the icon */
+}
+
+.login-form button, .signup-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover, .signup-form button:hover {
+    background-color: #0069d9;
+}
+
+form p {
+    margin-top: 10px;
+    color: red;
+}
+
+.name{
+    display: flex;
+}
+.name span {
+ margin: 5px;
+}
