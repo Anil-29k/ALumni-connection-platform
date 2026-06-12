@@ -1,3 +1,3 @@
 # Alumni Connection Platform 
 
- It conect student with alumni
+ It connect student with alumni
